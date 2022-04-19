@@ -4,7 +4,7 @@
   "author": "reco_luan",
   "scripts": {
     "dev": "vuepress dev . --temp .temp",
-    "build": "vuepress build ."
+    "build": "vuepress build build"
   },
   "devDependencies": {
     "async-validator": "^1.11.5",
