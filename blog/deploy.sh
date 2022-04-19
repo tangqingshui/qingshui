@@ -7,7 +7,7 @@ set -e
 npm run build
 
 # 进入生成的文件夹
-cd build/.vuepress/dist
+cd pubilc
 
 git init
 git add -A
