@@ -2,7 +2,6 @@ module.exports = {
   "title": "饭团也有春天",
   "description": "",
   "dest": "public",
-  "base": "/blog/",
   "locales": {
     '/': {
       lang: 'zh-CN'
@@ -56,6 +55,10 @@ module.exports = {
           {
             "text": "Vue3.0",
             "link": "/docs/vue/ref"
+          },
+          {
+            "text": "浅读vue.js设计与实现",
+            "link": "/docs/vue3/frameDesign"
           },
           {
             "text": "Nuxt",
@@ -168,7 +171,7 @@ module.exports = {
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
-    "author": "Jabin",
+    "author": "JabinAndQingshui",
     "authorAvatar": "https://www.zpzpup.com/assets/image/avatar.png",
     "record": "鄂ICP备18004957号-2",
     "startYear": "2018"
