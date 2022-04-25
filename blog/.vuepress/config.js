@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "饭团也有春天",
+  "title": "清水",
   "description": "",
   "dest": "public",
   "locales": {
@@ -12,7 +12,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "https://www.zpzpup.com/assets/image/favicon.ico"
+        "href": "/assets/image/favicon.ico"
       }
     ],
     [
@@ -28,7 +28,7 @@ module.exports = {
   "themeConfig": {
     "mode": 'dark',
     "noFoundPageByTencent": true,
-    "logo": 'https://www.zpzpup.com/assets/image/avatar.png',
+    "logo": '/assets/image/qingshui.jpg',
     "valineConfig": {
       appId: 'e6ojaBbYmQvJLNWeBouhonP6-gzGzoHsz',// your appId
       appKey: '050ScrJoJUW37QqwVwzSmKoX', // your appKey
@@ -70,17 +70,6 @@ module.exports = {
           }
         ]
       },
-      {
-        "text": "联系我吧",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "GitHub",
-            "link": "https://github.com/JabinPeng",
-            "icon": "reco-github"
-          }
-        ]
-      }
     ],
     "sidebar": {
       "/docs/jottings/": [
@@ -172,7 +161,7 @@ module.exports = {
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "JabinAndQingshui",
-    "authorAvatar": "https://www.zpzpup.com/assets/image/avatar.png",
+    "authorAvatar": "/assets/image/qingshui.jpg",
     "record": "鄂ICP备18004957号-2",
     "startYear": "2018"
   },
@@ -193,7 +182,7 @@ module.exports = {
       zIndex: 2,
       img: {
         replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
-        httpUrl: 'https://www.zpzpup.com/assets/image/sakura.png'     // 绝对路径
+        httpUrl: '/assets/image/sakura.png'     // 绝对路径
       }
     }],
     ["ribbon-animation", {
@@ -229,9 +218,9 @@ module.exports = {
     [
       "dynamic-title",
       {
-        showIcon: "https://www.zpzpup.com/assets/image/favicon.ico",
+        showIcon: "/assets/image/favicon.ico",
         showText: "欢迎回来 O(∩_∩)O~",
-        hideIcon: "https://www.zpzpup.com/assets/image/favicon.ico",
+        hideIcon: "/assets/image/favicon.ico",
         hideText: "失联中。。。快回来~",
         recoverTime: 2000
       }
