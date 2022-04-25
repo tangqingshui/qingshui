@@ -30,8 +30,8 @@ module.exports = {
     "noFoundPageByTencent": true,
     "logo": '/assets/image/qingshui.jpg',
     "valineConfig": {
-      appId: 'e6ojaBbYmQvJLNWeBouhonP6-gzGzoHsz',// your appId
-      appKey: '050ScrJoJUW37QqwVwzSmKoX', // your appKey
+      appId: 'H1akUcz8HInPxr2p9hh8KaMy-gzGzoHsz',// your appId
+      appKey: 'wyGMBURYgYJclh793JEHD1MF', // your appKey
     },
     "nav": [
       {
