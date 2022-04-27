@@ -45,6 +45,11 @@ module.exports = {
         "icon": "reco-date"
       },
       {
+        "text": "每日一练",
+        "link": "/docs/exercises/20220426",
+        "icon": "reco-dropdown"
+      },
+      {
         "text": "很厉害的文章",
         "icon": "reco-document",
         "items": [
