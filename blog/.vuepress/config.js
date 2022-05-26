@@ -61,6 +61,10 @@ module.exports = {
             "link": "/docs/vue3/frameDesign"
           },
           {
+            "text": "leetCode每日一题",
+            "link": "/docs/leetCode/recursionBacktracking"
+          },
+          {
             "text": "Nuxt",
             "link": "/docs/nuxt/introduction"
           },
@@ -127,6 +131,9 @@ module.exports = {
               'context'
           ]
         }
+      ],
+      "/docs/leetCode/": [
+        "recursionBacktracking"
       ]
     },
     "type": "blog",
