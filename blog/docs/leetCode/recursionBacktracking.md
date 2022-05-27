@@ -49,3 +49,51 @@ let combinationSum = function (candidates, target) {
   return res
 }
 ```
+
+
+## 40题：组合总和
+```js
+/**
+ * @param {number[]} candidates
+ * @param {number} target
+ * @return {number[][]}
+ */
+var combinationSum2 = function(candidates, target) {
+  // 定义一个变量存储结果
+  let res = []
+  // 对数组进行排序
+  candidates.sort((a,b) => a-b)
+
+  // 还是一样，想象成一个树形图，进行深度优先遍历
+  const help = (startIndex, prevSum, prevArr) => {
+      // 当树分叉节点之和大于目标时，结束本次递归
+      if (prevSum > target) {
+          return
+      }
+      // 当树分叉节点之和等于目标时，存储分叉节点数组
+      if (prevSum === target) {
+          res.push(prevArr)
+          return
+      }
+      // 遍历同级树节点
+      for (let i = startIndex; i < candidates.length; i++) {
+         // 剔除重复结果，同级树节点，如果相邻节点值相等，取首次递归结果即可，后续跳过
+          if (i> startIndex && candidates[i] === candidates[i-1]) {
+              continue
+          }
+          // 接收当前值
+          let cur = candidates[i];
+          // 接收节点之和
+          let sum = prevSum + cur;
+          // 接收节点数组
+          let arr = prevArr.concat(cur)
+          // 进行递归
+          help(i+1, sum, arr)
+      }
+
+  }
+
+  help(0,0,[])
+  return res
+};
+```
