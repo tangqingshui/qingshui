@@ -51,7 +51,7 @@ let combinationSum = function (candidates, target) {
 ```
 
 
-## 40题：组合总和
+## 40题：组合总和||
 ```js
 /**
  * @param {number[]} candidates
@@ -96,4 +96,43 @@ var combinationSum2 = function(candidates, target) {
   help(0,0,[])
   return res
 };
+```
+
+## 70题：组合
+
+```js
+/**
+ * @param {number} n
+ * @param {number} k
+ * @return {number[][]}
+ */
+let combine = function (n, k) {
+  // 接收最终结果
+  let ret = []
+
+  let helper = (start, prev) => {
+    let len = prev.length
+    if (len === k) {
+      ret.push(prev)
+      return
+    }
+
+    if (start > n) {
+      return
+    }
+
+    // 还有 rest 个位置待填补
+    let rest = k - prev.length
+    for (let i = start; i <= n; i++) {
+      // 减枝，举例：n=4，k=3 时，如果列表从 start=3 也就是 [3] 开始，那么该组合一定不存在，因为至少要 k=3 个数据，所以剪枝临界点为 n-i+1
+
+      if (n - i + 1 < rest) {
+        continue
+      }
+      helper(i + 1, prev.concat(i))
+    }
+  }
+  helper(1, [])
+  return ret
+}
 ```
